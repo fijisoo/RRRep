@@ -1,0 +1,8 @@
+{
+     "imie":"Dominik",
+     "nazwisko":"Ben",
+     "adres":{
+         "ulica":"Nadbystrzycka",
+         "miasto":"Lublin"
+     }
+}

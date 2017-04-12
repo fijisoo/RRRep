@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript tutu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body style="margin-left: 10%; width: 80%; background-color: azure;">
+<p style="text-align: center;">BACKGROUND</p>
+<div id="lewy_panel" style="float: left; width: 30%; background-color: coral; opacity: 0.5;">
+    <p>SPIS TRESCI</p>
+    <div>
+        <p>Rozdział 1 - Instrukcje języka</p>
+        <div>
+            <a class = "link" type = "button" name="js/R1/t1.js">Instrukcje, zmienne i typy danych</a><br />
+            <a class = "link" type = "button" name="js/R1/t2.js">Operacje i operatory</a><br />
+            <a class = "link" type = "button" name="js/R1/t3.js">Instrukcje warunkowe</a><br />
+            <a class = "link" type = "button" name="js/R1/t4.js">Pętle</a><br />
+            <a class = "link" type = "button" name="js/R1/t5.js">Funkcje i zasięg zmiennych</a><br />
+        </div>
+        <p>Rozdzial 2 - Obiekty, tablice i wyjątki</p>
+        <div>
+            <a class = "link" type = "button" name="js/R2/t1.js">Standardowe obiekty i funkcje</a><br />
+            <a class = "link" type = "button" name="js/R2/t2.js">Tworzenie obiektów</a><br />
+            <a class = "link" type = "button" name="js/R2/t3.js">Funkcje, konstruktory, protorypy</a><br />
+            <a class = "link" type = "button" name="js/R2/t4.js">Tablice</a><br />
+            <a class = "link" type = "button" name="js/R2/t5.js">Obsługa błędów i wyjątki</a><br />
+        </div>
+        <p>Rozdział 3 - Współpraca z przeglądarką</p>
+        <div>
+            <a class = "link" type = "button" name="js/R3/t1.js">DOM - współpraca z przeglądarką</a><br />
+            <a class = "link" type = "button" name="js/R3/t2.js">DOM - dostęp do elementów witryny</a><br />
+            <a class = "link" type = "button" name="js/R3/t3.js">Zdarzenia</a><br />
+            <a class = "link" type = "button" name="js/R3/t4.js">Elementy witryny</a><br />
+            <a class = "link" type = "button" name="js/R3/t5.js">Style CSS</a><br />
+        </div>
+        <p>Rozdział 4 - Przetwarzanie danych</p>
+        <div>
+            <a class = "link" type = "button" name="js/R4/t1.js">Operacje na ciągach znaków</a><br />
+            <a class = "link" type = "button" name="js/R4/t2.js">Wprowadzenie danych przez użytkownika</a><br />
+            <a class = "link" type = "button" name="js/R4/t3.js">Wyrażenia regularne</a><br />
+            <a class = "link" type = "button" name="js/R4/t4.js">Cookies</a><br />
+        </div>
+        <p>Rozdział 5 - Data i czas</p>
+        <div>
+            <a class = "link" type = "button" name="js/R5/t1.js">Obsługa daty i czasu</a><br />
+            <a class = "link" type = "button" name="js/R5/t2.js">Korzystanie z timerów</a><br />
+        </div>
+    </div>
+</div>
+<div id="prawy_panel" style=" float: right; width: 70%; background-color: lightgreen; opacity: 0.5;">
+    <p>Treść</p>
+    <div id="panel2"></div>
+</div>
+<script type="text/javascript">
+    $(".link").click(function(){
+        $( "#panel2" ).empty();
+        var nazwa = $(this).attr('name');
+        $.getScript(nazwa);
+    });
+</script>
+</body>
+</html>
